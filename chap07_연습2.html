@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 너비 1080의 컨테이너 */
+        .container{
+            width: 1080px;
+            margin: 0 auto;         /* 컨테이너 중앙 정렬 */
+            margin-bottom: 8px;     /* 아래 마진 8px */
+            overflow: hidden;       
+        }       
+        /* 왼쪽 레이아웃 */
+        .left{
+            width: 740px;           /* 너비 740px, 높이 428px */           
+            height: 428px;          
+            float: left;            /* 왼쪽 부착 */
+            background-color: skyblue;
+        }
+        /* 오른쪽 레이아웃 */
+        .right{
+            width: 332px;           /* 너비 332px, 높이 428px */
+            height: 428px;
+            float: right;           /* 오른쪽 부착 */
+            background-color: darkred;
+        }
+        /* 메뉴 태그 */
+        .gnb{
+            padding: 8px 0 8px 0;   /* 위아래 패딩 8px */
+            float: left;            /* 왼쪽 부착 */
+            background-color: green;
+        }
+        /* 네이버 실검 */
+        .rank{
+            padding: 8px 0 8px 0;   /* 위아래 패딩 8px */
+            float: right;           /* 오른쪽 부착 */
+            background-color: yellow;
+        }
+        /* 아래쪽 레이아웃 */
+        .footer{
+            height: 80px;
+            width: 1080;
+            background-color: goldenrod;
+            position: relative;     /* 페이지 하단에 위치 */
+
+
+        }
+        
+        /* gnb의 list */
+        li{
+            list-style-type: none;
+            float: left;            /* 왼쪽 부착 */
+            padding-left: 16px;     /* 왼쪽 패딩 16px */
+            
+        }
+        /* list 내 첫번째 요소 */
+        li:first-child{
+            padding-left: 0px;      /* 왼쪽 패딩 0px */
+        }
+
+        /* rank의 list */
+        ul.rank > li{
+            list-style-type: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Logo</h1>
+    </div>
+    <div class="container">
+        <ul class="gnb">
+            <li>메일</li>
+            <li>카페</li>
+            <li>블로그</li>
+            <li>쇼핑</li>
+            <li>사전</li>
+            <li>뉴스</li>
+            <li>증권</li>
+            <li>부동산</li>
+            <li>지도</li>
+        </ul>
+        <ul class="rank">
+            <li>실시간 검색 순위</li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+    <div class="container">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+    <div class="container">
+        <div class="footer"></div>
+    </div>
+</body>
+</html>
